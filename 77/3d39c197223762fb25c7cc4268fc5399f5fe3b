@@ -1,0 +1,85 @@
+README.md
+  s_edf7e66d6fb9f9::t_514cca29059cc2 1-31
+examples/01-basic/sbxenv.yaml
+  s_edf7e66d6fb9f9::t_2a8b353fc974bf 1-13
+examples/01-basic/web-app/package.json
+  s_edf7e66d6fb9f9::t_a0ab9849b85c26 1
+examples/01-basic/web-app/server.js
+  s_edf7e66d6fb9f9::t_696070b084bfa9 1-10
+examples/02-args/production.args
+  s_edf7e66d6fb9f9::t_2fdf01d4eaf37c 1-4
+examples/02-args/sbxenv.yaml
+  s_edf7e66d6fb9f9::t_901a698452a8fb 1-24
+examples/02-args/staging.args
+  s_edf7e66d6fb9f9::t_823e3fd7a58dd8 1-2
+examples/02-args/web-app/package.json
+  s_edf7e66d6fb9f9::t_16bb00506d2ed9 1
+examples/02-args/web-app/server.js
+  s_edf7e66d6fb9f9::t_6fa58627065d91 1-10
+examples/03-layered/.gitignore
+  s_edf7e66d6fb9f9::t_af96e9cbcc0623 1
+examples/03-layered/base.sbxenv.yaml
+  s_edf7e66d6fb9f9::t_7fbc6472203072 1-12
+examples/03-layered/web-app/package.json
+  s_edf7e66d6fb9f9::t_85d457cc9f190a 1
+examples/03-layered/web-app/server.js
+  s_edf7e66d6fb9f9::t_48b0148e501885 1-10
+examples/04-multi-repo/architecture-docs/README.md
+  s_edf7e66d6fb9f9::t_dbc3571d8c16b9 1
+examples/04-multi-repo/sbxenv.yaml
+  s_edf7e66d6fb9f9::t_becdf13891909c 1-9
+examples/04-multi-repo/shared-components/index.js
+  s_edf7e66d6fb9f9::t_0a82cae531ba3c 1
+examples/04-multi-repo/web-app/package.json
+  s_edf7e66d6fb9f9::t_1707844ba89de1 1
+examples/04-multi-repo/web-app/server.js
+  s_edf7e66d6fb9f9::t_a4ee45e7272f64 1-10
+examples/05-lifecycle/sbxenv.yaml
+  s_edf7e66d6fb9f9::t_a8152e887acd0d 1-19
+examples/05-lifecycle/scripts/archive.sh
+  s_edf7e66d6fb9f9::t_30b6aee1fbedff 1-2
+examples/05-lifecycle/scripts/seed.sh
+  s_edf7e66d6fb9f9::t_b7c3a333ae52f0 1-4
+examples/05-lifecycle/web-app/package.json
+  s_edf7e66d6fb9f9::t_b93c4ec3d67cc8 1
+examples/05-lifecycle/web-app/server.js
+  s_edf7e66d6fb9f9::t_139ac72e00e947 1-10
+examples/06-secrets-mcp/sbxenv.yaml
+  s_edf7e66d6fb9f9::t_90c4a8a7a3e469 1-38
+examples/06-secrets-mcp/web-app/package.json
+  s_edf7e66d6fb9f9::t_83224781f9df9d 1
+examples/06-secrets-mcp/web-app/server.js
+  s_edf7e66d6fb9f9::t_13c2c62d2bf983 1-10
+examples/07-kits/sbxenv.yaml
+  s_edf7e66d6fb9f9::t_5639c48c1b50ae 1-9
+examples/07-kits/sbxenv.yaml.v2
+  s_edf7e66d6fb9f9::t_be3c63777ac05a 1-8
+examples/07-kits/web-app/package.json
+  s_edf7e66d6fb9f9::t_55f18668be2896 1
+examples/07-kits/web-app/server.js
+  s_edf7e66d6fb9f9::t_74ee2de606ed58 1-10
+examples/08-user-defaults/home.sbxenv.yaml
+  s_edf7e66d6fb9f9::t_917896ba58402f 1-4
+examples/08-user-defaults/sbxenv.yaml
+  s_edf7e66d6fb9f9::t_e7301675720dc0 1-6
+examples/08-user-defaults/web-app/package.json
+  s_edf7e66d6fb9f9::t_5ad60f691bb58f 1
+examples/08-user-defaults/web-app/server.js
+  s_edf7e66d6fb9f9::t_c3aace78164be8 1-10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.24",
+  "base_commit_sha": "773d39c197223762fb25c7cc4268fc5399f5fe3b",
+  "prompts": {},
+  "sessions": {
+    "s_edf7e66d6fb9f9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c2b6f269-94fd-4a82-922f-3d43cd1d0a86",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "chit786 <chit786@gmail.com>"
+    }
+  }
+}
