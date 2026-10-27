@@ -1,0 +1,9 @@
+# Kits v3: agent = workload name; list workload + mixins under kits. Pin versions.
+schemaVersion: "1"
+name: demo-kits-v3
+agent: sbx-kit-claude
+workspace: ./web-app
+
+kits:
+  - docker.io/docker/sbx-kit-claude:2.1.267
+  - docker.io/sbx/playwright:1.61.1

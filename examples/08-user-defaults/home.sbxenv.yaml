@@ -1,0 +1,4 @@
+# Copy to ~/.sbxenv.yaml. Cannot set `name`; workspace must be projectDir or a subdir.
+schemaVersion: "1"
+agent: claude
+workspace: ${{ env.projectDir }}

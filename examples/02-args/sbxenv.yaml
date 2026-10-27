@@ -1,0 +1,24 @@
+# Parameterised environment: values come from --env-arg or --env-args-file.
+schemaVersion: "1"
+name: demo-args
+agent: claude
+workspace: ./web-app
+
+args:
+  channel:
+    default: stable
+    description: Release channel
+    enum: [stable, beta]
+  endpoint:
+    required: true
+    description: API endpoint
+  cpus:
+    default: "4"
+    pattern: "[1-9][0-9]*"
+
+env:
+  RELEASE_CHANNEL: ${{ env.args.channel }}
+  API_ENDPOINT: ${{ env.args.endpoint }}
+
+sandboxOptions:
+  cpus: ${{ env.args.cpus }}

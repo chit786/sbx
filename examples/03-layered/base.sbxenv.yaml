@@ -1,0 +1,12 @@
+# Team-shared, committed.
+schemaVersion: "1"
+name: demo-layered
+agent: claude
+workspace: ./web-app
+
+env:
+  NODE_ENV: development
+
+sandboxOptions:
+  cpus: 4
+  memory: 8g

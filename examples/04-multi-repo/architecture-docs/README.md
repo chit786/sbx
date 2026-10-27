@@ -1,0 +1,1 @@
+# Architecture (mounted read-only)

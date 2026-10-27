@@ -1,0 +1,38 @@
+schemaVersion: "1"
+name: demo-secrets-mcp
+agent: claude
+workspace: ./web-app
+
+# Exactly one of value | ref | command per secret. Avoid literal `value`.
+secrets:
+  github:
+    command: gh auth token
+  # anthropic:
+  #   ref: op://Private/Anthropic/api-key
+  #   refresh: 55m
+
+# Approve which domains a credential may be sent to (merged into global credentials.yaml).
+bindings:
+  github:
+    apiKey:
+      domains:
+        - api.github.com
+
+registries:
+  ghcr.io:
+    secret:
+      command: gh auth token
+
+mcp:
+  servers:
+    - name: docs-remote          # remote: host-global, survives `sbx env rm`
+      url: https://mcp.example.com/mcp
+    - name: local-tools          # local stdio: scoped to this environment
+      command: npx
+      args: ["-y", "@modelcontextprotocol/server-filesystem", "./web-app"]
+
+ports:
+  - sandbox: 3000
+    host: 3000
+  - sandbox: 9229
+    protocol: tcp

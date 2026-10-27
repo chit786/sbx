@@ -1,0 +1,19 @@
+# Host commands need approval each run unless you set:
+#   sbx settings set env.rememberHostCommands true
+schemaVersion: "1"
+name: demo-lifecycle
+agent: claude
+workspace: ./web-app
+
+lifecycle:
+  initialize:            # before every create/run -- keep idempotent
+    - name: Check workspace
+      command: test -d web-app && echo workspace present
+      workdir: ${{ env.fileDir }}
+      timeout: 1m
+  postCreate:            # only after a NEW sandbox is created
+    - command: ../scripts/seed.sh
+      workdir: ${{ env.fileDir }}/web-app
+  preRemove:             # failure warns, doesn't block removal
+    - command: ./scripts/archive.sh
+      workdir: ${{ env.fileDir }}

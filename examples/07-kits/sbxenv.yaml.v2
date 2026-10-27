@@ -1,0 +1,8 @@
+# Kits v2: built-in agent + add-on kit
+schemaVersion: "1"
+name: demo-kits-v2
+agent: claude
+workspace: ./web-app
+
+kits:
+  - docker.io/sbx/playwright-kit:latest

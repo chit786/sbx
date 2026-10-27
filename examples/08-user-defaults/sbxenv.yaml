@@ -1,0 +1,6 @@
+# Merged with ~/.sbxenv.yaml when run with no path (explicit path skips defaults).
+schemaVersion: "1"
+name: demo-user-defaults
+workspace: ./web-app
+env:
+  NODE_ENV: development

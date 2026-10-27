@@ -1,0 +1,13 @@
+# Minimal environment. sbxenv.yaml sits BESIDE the workspace, not inside it,
+# so the agent can't rewrite the host-executed config.
+schemaVersion: "1"
+name: demo-basic
+agent: claude
+workspace: ./web-app
+
+env:
+  NODE_ENV: test
+
+ports:
+  - sandbox: 3000
+    host: 3000

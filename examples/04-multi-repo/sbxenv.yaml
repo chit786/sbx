@@ -1,0 +1,9 @@
+schemaVersion: "1"
+name: demo-multi-repo
+agent: claude
+workspace: ./web-app
+
+additionalWorkspaces:
+  - path: ./shared-components
+  - path: ./architecture-docs
+    readOnly: true

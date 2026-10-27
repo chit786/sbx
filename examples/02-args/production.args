@@ -1,0 +1,4 @@
+# NAME=VALUE, read literally
+channel=stable
+endpoint=https://api.example.com
+cpus=8
